@@ -98,7 +98,7 @@ footer.small { padding-block: var(--space-6) var(--space-7); border-top: 1px sol
 <script>
 (function () {
   var F = window.FiredUp, h = React.createElement;
-  var AUDIT = 'https://seo-kings.co.uk/free-seo-audit/';
+  var CONTACT = 'https://seo-kings.co.uk/contact/';
 
   function band(id, children) { return h('section', { className: 'band', id: id }, children); }
   function list(items) { return h('ul', null, items.map(function (t, i) { return h('li', { key: i }, t); })); }
@@ -122,23 +122,49 @@ footer.small { padding-block: var(--space-6) var(--space-7); border-top: 1px sol
       title: 'Stay warm in style.',
       accent: 'Get found first.',
       lead: 'When someone in Bath or Bristol searches for a log burner this winter, or a pizza oven next summer, Fired Up should be the first name they find and the showroom they book. Here’s how I’d get you there.',
-      primary: { label: 'Book the free audit', href: '#next' },
+      primary: { label: 'See what we found', href: '#found' },
       secondary: { label: 'See the plan', href: '#pages' },
       note: 'Prepared by Rich at SEO Kings, Keynsham',
       image: 'fu/hero-oak-beam.jpg',
       imageAlt: 'A wood fire burning in an oak beam hearth in a modern living room'
     }),
 
+    band('found', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'The audit', title: 'What we found on', accent: 'your site.',
+        lead: 'None of this reflects on the business. It’s the same gap we find on most trade and showroom sites built on a page builder.' }),
+      h(F.SpecTable, { key: 't', caption: 'Five things costing you enquiries', columns: ['What it means for your enquiries'], rows: [
+        { label: 'Two phone numbers, one site', values: ['The header dials 07364 131757; the contact sections show 01225 260470. Mixed contact details confuse Google’s local matching.'] },
+        { label: 'Zero structured data', values: ['No schema markup anywhere, so nothing tells Google or AI assistants what you sell or where you are.'] },
+        { label: '“Bath” in every title, Bristol on the door', values: ['Titles lead with Bath, but your address in Wick has a BS30 postcode. That works against you in both cities’ local results.'] },
+        { label: 'One page, five brands', values: ['Rocal, Contura, Chilli Penguin, Kalfire and Woodwarm share one paragraph each, so there’s no page for “Contura dealer Bristol” to land on.'] },
+        { label: 'Unfinished form, live', values: ['The enquiry dropdown still reads “Choice 1 / 2 / 3 / 4”, so every enquiry loses that detail.'] }
+      ] }),
+      h(F.SectionHeader, { key: 'h2', as: 'h3', size: 'md', eyebrow: 'What you’ve already built', title: 'Strong materials,', accent: 'just scattered.',
+        lead: 'You’re not starting from zero. It just isn’t joined up yet.' }),
+      h(F.ProofStrip, { key: 'p', items: [
+        { icon: 'years', title: '20+ years, qualified & insured', text: 'Currently one line, not a trust section.' },
+        { icon: 'shield', title: 'Five brand partnerships', text: 'Rocal, Contura, Chilli Penguin, Kalfire and Woodwarm, sharing one paragraph.' },
+        { icon: 'star', title: 'Named reviews', text: 'Eva Johnson and Matthew Reynolds, with no Google rating shown beside them.' },
+        { icon: 'finance', title: 'Finance & free consultations', text: 'Both buried on the homepage.' }
+      ] })
+    ]),
+
+    band('opportunity', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'The opportunity', title: 'Ground almost nobody local', accent: 'has taken.',
+        lead: 'Independent fireplace and stove showrooms are consistently thin online outside the national chains: directory listings and Wix sites, not well-built local competitors. A page for each brand you stock and each town within reach of the showroom is open ground.' }),
+      h('p', { key: 'n', className: 'note' }, 'We don’t track Fired Up’s rankings yet. Live rank tracking starts on day one of the monthly plan.')
+    ]),
+
     band('search', [
       h(F.SectionHeader, { key: 'h', eyebrow: 'How your customers search', title: 'They search by fire, and by', accent: 'town.',
         lead: 'People don’t search for a company name. They search for the fire they want and where they live, and the season decides which fire.' }),
-      h('div', { key: 'c', className: 'chips' }, ['log burner Bath', 'wood burning stove installation Bristol', 'gas fire fitters near me', 'electric fireplace Cotswolds', 'bioethanol fire', 'outdoor fire pit Wiltshire', 'pizza oven Bath', 'can I have a log burner in Bristol', 'DEFRA approved stove']
+      h('div', { key: 'c', className: 'chips' }, ['log burner Bath', 'wood burning stove installation Bristol', 'gas fire fitters near me', 'electric fireplace Cotswolds', 'bioethanol fire', 'outdoor fire pit Wiltshire', 'pizza oven Bath', 'Contura dealer Bristol', 'can I have a log burner in Bristol', 'DEFRA approved stove']
         .map(function (p) { return h('span', { key: p, className: 'phrase' }, p); }))
     ]),
 
     band('pages', [
       h(F.SectionHeader, { key: 'h', eyebrow: 'The website', title: 'Every page we’ll build,', accent: 'in order.',
-        lead: 'Launch with a page for every part of your range and every area you cover, add guides that answer buyers’ questions, then grow with product pages and local install pages.' }),
+        lead: 'Launch with a page for every part of your range, every brand you stock and every area you cover, add guides that answer buyers’ questions, then grow with product pages and local install pages.' }),
       h('div', { key: 't', className: 'grid-3' },
         h(F.ServiceTile, { icon: 'stove', title: 'Wood-burning stoves', text: 'Log burners and multi-fuel stoves, with the home survey explained.' }),
         h(F.ServiceTile, { icon: 'gas', title: 'Gas fires', text: 'Inset, freestanding and balanced flue gas fires.' }),
@@ -152,6 +178,7 @@ footer.small { padding-block: var(--space-6) var(--space-7); border-top: 1px sol
         h(F.SpecTable, { caption: 'Phase 1 · Launch', rows: [
           { label: 'Home', value: '1' },
           { label: 'Range pages (above)', value: '6' },
+          { label: 'Brand pages: Rocal, Contura, Chilli Penguin, Kalfire, Woodwarm', value: '5' },
           { label: 'Bath, Bristol, the Cotswolds, Wiltshire, Somerset', value: '5' },
           { label: 'Book a showroom visit, installation and home survey, finance, our installs, reviews', value: '5' },
           { label: 'About, contact, FAQs, privacy, terms', value: '5' }
@@ -164,7 +191,7 @@ footer.small { padding-block: var(--space-6) var(--space-7); border-top: 1px sol
           { label: 'Air conditioning, when it launches', value: '1+' }
         ] })
       ),
-      h('div', { key: 'tot', className: 'total' }, h('strong', null, '26 pages at launch'), h('p', { className: 'note' }, '22 core pages and 4 guides, all built from this design system and fast on a phone. It’s the same approach I used for TM Carpentry, whose site scores 100 in all four Google Lighthouse tests.'))
+      h('div', { key: 'tot', className: 'total' }, h('strong', null, '31 pages at launch'), h('p', { className: 'note' }, '27 core pages and 4 guides, all built from this design system and fast on a phone. It’s the same approach I used for TM Carpentry, whose site scores 100 in all four Google Lighthouse tests.'))
     ]),
 
     band('guides', [
@@ -228,18 +255,18 @@ footer.small { padding-block: var(--space-6) var(--space-7); border-top: 1px sol
     band('plan', [
       h(F.SectionHeader, { key: 'h', eyebrow: 'The plan', title: 'Four steps,', accent: 'no contract.' }),
       h(F.ProcessSteps, { key: 's', steps: [
-        { title: 'Free audit', text: 'Your current site and Google profile: what’s stopping you showing up, and what to fix first. Free.' },
+        { title: 'Audit · done', text: 'Five fixes found (above), starting with the phone numbers and the enquiry form.' },
         { title: 'Google profile', text: 'Categories, photos of lit installs, showroom hours and a simple way to collect reviews.' },
-        { title: 'New website', text: '26 pages at launch, built from your design system. Quoted after the audit.' },
+        { title: 'New website', text: '31 pages at launch, including a page for each brand you stock, built from your design system.' },
         { title: 'Monthly local SEO', text: 'New pages, reviews, rankings and the four seasonal updates, reported in plain English. From £150 a month.' }
       ] })
     ]),
 
     h('div', { id: 'next', style: { paddingBlock: 'clamp(56px, 8vw, 96px)', borderTop: '1px solid var(--line)' } },
       h(F.CTABanner, {
-        eyebrow: 'Next step', title: 'Your free audit,', accent: 'this week.',
-        text: 'I’ll show you exactly where Fired Up stands for “log burner Bath” and your other key searches, and what I’d fix first. Rich · 07702 264 921 · seo-kings.co.uk',
-        primary: { label: 'Book the free audit', href: AUDIT },
+        eyebrow: 'Next step', title: 'Let’s walk through it,', accent: 'live.',
+        text: 'I’ll take you through each finding on your own site, then we agree the build and what goes live first. Rich · 07702 264 921 · seo-kings.co.uk',
+        primary: { label: 'Book a walkthrough', href: CONTACT },
         secondary: { label: 'Call Rich', href: 'tel:+447702264921', icon: 'phone' },
         image: PHOTO.loft.src, imageAlt: PHOTO.loft.alt
       }))
