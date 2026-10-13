@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Website and local SEO proposal for Fired Up Fireplace & Stove Centre, prepared by SEO Kings.">
+<title>Fired Up × SEO Kings</title>
+</head>
+<body>
+<link rel="stylesheet" href="fu/bundle.css">
+<style>
+/* Built from the Fired Up design system: its tokens (Iron theme), its fonts and its
+   real components from fu/bundle.js. Layout: one 1280px container, sections space-9 apart. */
+@font-face { font-family: "Fraunces"; src: url(fu/fonts/Fraunces-Variable.woff2) format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Fraunces"; src: url(fu/fonts/Fraunces-Variable-Italic.woff2) format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url(fu/fonts/InstrumentSans-Variable.woff2) format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url(fu/fonts/InstrumentSans-Variable-Italic.woff2) format("woff2"); font-weight: 400 700; font-style: italic; font-display: swap; }
+
+:root {
+  color-scheme: dark;
+  /* Fired Up tokens · Iron theme */
+  --surface: #16130f; --surface-raised: #2a251f; --surface-inverse: #f3eee6;
+  --line: #3a332b; --line-control: #90867a;
+  --ink: #f3eee6; --ink-soft: #cfc6ba; --ink-muted: #a39a8f;
+  --sage: #8fa68e; --sage-fill: #8fa68e; --sage-deep: #4e6650; --sage-soft: #26302a; --on-sage: #16130f;
+  --ember: #f26f29; --on-ember: #16130f; --accent-display: #f26f29;
+  --kiln: #d14826; --amber: #f79323; --on-amber: #16130f; --glow: #fdc611;
+  --danger: #ff8c73; --focus: #f79323; --scrim: rgba(22, 19, 15, 0.72);
+  --font-display: Fraunces, "Iowan Old Style", Georgia, serif;
+  --font-sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px;
+  --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px; --space-10: 144px;
+  --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px; --radius-arch: 999px; --radius-pill: 999px;
+  --shadow-raised: 0 1px 0 rgba(255,255,255,0.04) inset, 0 16px 40px rgba(0,0,0,0.35);
+  --shadow-glow: 0 10px 32px rgba(242,111,41,0.32);
+  --header-height: 80px;
+}
+body { background: var(--surface); color: var(--ink); font-family: var(--font-sans); font-size: 17px; line-height: 1.6; }
+
+.wrap { max-width: 1280px; margin: 0 auto; padding-inline: clamp(16px, 5vw, 64px); box-sizing: border-box; }
+.band { padding-block: clamp(56px, 8vw, 96px); display: flex; flex-direction: column; gap: var(--space-7); }
+.band + .band { border-top: 1px solid var(--line); }
+.fu-hero { padding-inline: 0 !important; padding-block: clamp(40px, 7vw, 96px) !important; }
+
+/* Proposal bar */
+.bar { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); flex-wrap: wrap; padding-block: var(--space-5); border-bottom: 1px solid var(--line); }
+.bar-brands { display: flex; align-items: center; gap: var(--space-4); }
+.bar-brands img { width: 132px; height: auto; display: block; }
+.bar-x { color: var(--ink-muted); font-size: 15px; }
+.bar-sk { font-weight: 600; font-size: 15px; color: var(--ink); }
+.bar-meta { font-size: 13px; color: var(--ink-muted); }
+
+/* Search phrases */
+.chips { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.phrase { background: var(--sage-soft); color: var(--sage); border-radius: var(--radius-pill); padding: 10px 18px; font-size: 15px; font-weight: 500; }
+
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: var(--space-5); }
+.two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-7); align-items: start; }
+.note { font-size: 15px; color: var(--ink-muted); max-width: 66ch; margin: 0; }
+.total { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2) var(--space-5); }
+.total strong { font-family: var(--font-display); font-size: 28px; font-weight: 700; font-variation-settings: 'opsz' 36; }
+
+/* Season tab content */
+.season { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-6); padding-top: var(--space-5); }
+.season h3 { margin: 0 0 var(--space-3); font-family: var(--font-display); font-size: 28px; font-weight: 700; font-variation-settings: 'opsz' 36; }
+.season ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: var(--space-2); color: var(--ink-soft); }
+.season ul li::marker { color: var(--sage); }
+.season img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-md); display: block; }
+
+/* Keep the fire in frame: each photo's flame sits off-centre */
+.fu-hero-media img { object-position: 34% 50%; }
+#next .fu-cta-media img { object-position: 84% 50%; }
+
+footer.small { padding-block: var(--space-6) var(--space-7); border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-muted); }
+
+@media (max-width: 860px) {
+  .two, .season { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="wrap">
+  <div class="bar">
+    <div class="bar-brands">
+      <img src="fu/logo-white.png" alt="Fired Up Fireplace & Stove Centre">
+      <span class="bar-x">×</span>
+      <span class="bar-sk">SEO Kings</span>
+    </div>
+    <span class="bar-meta">Website and local SEO proposal · October 2026</span>
+  </div>
+  <div id="app"></div>
+  <footer class="small">Prepared for Fired Up Fireplace &amp; Stove Centre by SEO Kings Ltd, Keynsham. Results shown are for other SEO Kings clients and aren’t a guarantee for any business. Photos and brand assets belong to Fired Up.</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="fu/bundle.js"></script>
+<script>
+(function () {
+  var F = window.FiredUp, h = React.createElement;
+  var AUDIT = 'https://seo-kings.co.uk/free-seo-audit/';
+
+  function band(id, children) { return h('section', { className: 'band', id: id }, children); }
+  function list(items) { return h('ul', null, items.map(function (t, i) { return h('li', { key: i }, t); })); }
+  // Each photo with the x/y position of its flame, so the crop always shows the fire
+  var PHOTO = {
+    oak:  { src: 'fu/hero-oak-beam.jpg',    pos: '34% 55%', alt: 'A wood fire burning in an oak beam hearth' },
+    loft: { src: 'fu/wood-burner-loft.jpg', pos: '92% 55%', alt: 'A lit freestanding wood burner in a loft room' },
+    gas:  { src: 'fu/gas-fire-bench.jpg',   pos: '52% 45%', alt: 'A lit gas fire set into an oak bench, with a garden view' }
+  };
+  function season(title, items, photo) {
+    return h('div', { className: 'season' },
+      h('div', null, h('h3', null, title), list(items)),
+      h('img', { src: photo.src, alt: photo.alt, style: { objectPosition: photo.pos } }));
+  }
+
+  var page = h(React.Fragment, null,
+
+    h(F.Hero, {
+      size: 'lg',
+      eyebrow: 'A plan for Fired Up',
+      title: 'Stay warm in style.',
+      accent: 'Get found first.',
+      lead: 'When someone in Bath or Bristol searches for a log burner this winter, or a pizza oven next summer, Fired Up should be the first name they find and the showroom they book. Here’s how I’d get you there.',
+      primary: { label: 'Book the free audit', href: '#next' },
+      secondary: { label: 'See the plan', href: '#pages' },
+      note: 'Prepared by Rich at SEO Kings, Keynsham',
+      image: 'fu/hero-oak-beam.jpg',
+      imageAlt: 'A wood fire burning in an oak beam hearth in a modern living room'
+    }),
+
+    band('search', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'How your customers search', title: 'They search by fire, and by', accent: 'town.',
+        lead: 'People don’t search for a company name. They search for the fire they want and where they live, and the season decides which fire.' }),
+      h('div', { key: 'c', className: 'chips' }, ['log burner Bath', 'wood burning stove installation Bristol', 'gas fire fitters near me', 'electric fireplace Cotswolds', 'bioethanol fire', 'outdoor fire pit Wiltshire', 'pizza oven Bath', 'can I have a log burner in Bristol', 'DEFRA approved stove']
+        .map(function (p) { return h('span', { key: p, className: 'phrase' }, p); }))
+    ]),
+
+    band('pages', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'The website', title: 'Every page we’ll build,', accent: 'in order.',
+        lead: 'Launch with a page for every part of your range and every area you cover, add guides that answer buyers’ questions, then grow with product pages and local install pages.' }),
+      h('div', { key: 't', className: 'grid-3' },
+        h(F.ServiceTile, { icon: 'stove', title: 'Wood-burning stoves', text: 'Log burners and multi-fuel stoves, with the home survey explained.' }),
+        h(F.ServiceTile, { icon: 'gas', title: 'Gas fires', text: 'Inset, freestanding and balanced flue gas fires.' }),
+        h(F.ServiceTile, { icon: 'electric', title: 'Electric fireplaces', text: 'For homes without a chimney, fitted to look built-in.' }),
+        h(F.ServiceTile, { icon: 'bioethanol', title: 'Bioethanol fires', text: 'Real flames with no flue, for flats and garden rooms.' }),
+        h(F.ServiceTile, { icon: 'outdoor', title: 'Outdoor fires', text: 'Fire pits and outdoor fireplaces for the garden.' }),
+        h(F.ServiceTile, { icon: 'flame', title: 'Pizza ovens', text: 'The summer range, front and centre from April.' }),
+        h(F.ServiceTile, { icon: 'aircon', title: 'Air conditioning', status: 'soon' })
+      ),
+      h('div', { key: 's', className: 'two' },
+        h(F.SpecTable, { caption: 'Phase 1 · Launch', rows: [
+          { label: 'Home', value: '1' },
+          { label: 'Range pages (above)', value: '6' },
+          { label: 'Bath, Bristol, the Cotswolds, Wiltshire, Somerset', value: '5' },
+          { label: 'Book a showroom visit, installation and home survey, finance, our installs, reviews', value: '5' },
+          { label: 'About, contact, FAQs, privacy, terms', value: '5' }
+        ] }),
+        h(F.SpecTable, { caption: 'Phases 2 and 3 · Grow', rows: [
+          { label: 'Buyer guides at launch (below)', value: '4' },
+          { label: 'New guide every month', value: 'Ongoing' },
+          { label: 'A page for each stove and fire you stock', value: '[number]' },
+          { label: 'Local install pages, e.g. “Wood-burning stoves in Bath”, only where there’s a real job to show', value: 'Per install' },
+          { label: 'Air conditioning, when it launches', value: '1+' }
+        ] })
+      ),
+      h('div', { key: 'tot', className: 'total' }, h('strong', null, '26 pages at launch'), h('p', { className: 'note' }, '22 core pages and 4 guides, all built from this design system and fast on a phone. It’s the same approach I used for TM Carpentry, whose site scores 100 in all four Google Lighthouse tests.'))
+    ]),
+
+    band('guides', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'Buyer guides', title: 'Bath and Bristol have', accent: 'smoke control areas.',
+        lead: 'So buyers have real questions before they spend. A clear guide for each one brings in people who are close to buying, and shows them you know the rules.' }),
+      h(F.Accordion, { key: 'a', id: 'guides-faq', defaultOpen: 0, headingLevel: 'h3', items: [
+        { question: 'Can I have a log burner in Bristol?', answer: 'A guide to what a smoke control area means, where they apply, and which stoves you can fit there.' },
+        { question: 'What is a DEFRA-exempt stove?', answer: 'A plain-English explainer, linked to the exempt models you stock.' },
+        { question: 'Do I need a chimney for a wood burner?', answer: 'Flue options, liners, and what your home survey checks before you quote.' },
+        { question: 'Gas, electric or bioethanol?', answer: 'Running costs, installation and which suits which room, so buyers arrive knowing what they want.' }
+      ] })
+    ]),
+
+    band('seasons', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'Seasonal updates', title: 'A site that changes', accent: 'with the weather.',
+        lead: 'Your year runs from pizza ovens to log burners. Four times a year we change what the website, your Google profile and your social posts lead with.' }),
+      h(F.Tabs, { key: 't', id: 'season-tabs', label: 'Seasons', defaultTab: 'peak', tabs: [
+        { id: 'early', label: 'Aug – Sep', content: season('Pizza ovens to log burners', [
+          'Homepage switches from pizza ovens and outdoor fires to log burners',
+          'Book a home survey before the autumn rush',
+          'Guide: getting your chimney and flue checked before winter'
+        ], PHOTO.loft) },
+        { id: 'peak', label: 'Oct – Dec · Peak', content: season('Come and see them lit', [
+          'Wood-burners and gas fires lead every page',
+          '“Fitted before Christmas” cut-off date: [date to confirm]',
+          'Finance offer badge on every range',
+          'Weekly Google profile posts with lit-fire photos'
+        ], PHOTO.oak) },
+        { id: 'winter', label: 'Jan – Mar', content: season('Winter offers', [
+          'Ex-display and clearance stoves get their own page',
+          '“Still time to get warm” while it’s cold',
+          'Review requests to everyone fitted over winter'
+        ], PHOTO.loft) },
+        { id: 'summer', label: 'Apr – Jul', content: season('Pizza ovens and outdoor living', [
+          'Pizza ovens and outdoor fires lead the homepage',
+          'Seasonal guide: choosing a pizza oven',
+          'Bioethanol fires for garden rooms',
+          'Air conditioning launch page when it’s ready'
+        ], PHOTO.gas) }
+      ] }),
+      h(F.SpecTable, { key: 'w', caption: 'What we change each season', rows: [
+        { label: 'Homepage', value: 'Hero headline and photo, what shows first (pizza ovens in summer, log burners in winter), the seasonal offer and the main button' },
+        { label: 'Announcement bar', value: 'The one message that matters now, like the Christmas fitting cut-off or a clearance sale' },
+        { label: 'Range pages', value: 'Which models lead, the offer or finance badge, and a seasonal question in the FAQs' },
+        { label: 'Area pages', value: 'The latest local installs and reviews from that area' },
+        { label: 'Guides', value: 'One new seasonal guide, older ones refreshed' },
+        { label: 'Google profile and social', value: 'Cover photo, weekly posts and offers to match the website' }
+      ] })
+    ]),
+
+    band('proof', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'What I’ve done for other local trades', title: 'Proof, not', accent: 'promises.' }),
+      h(F.ProofStrip, { key: 'p', items: [
+        { icon: 'star', title: '2 of 3', text: 'Map Pack places for “painter bath” held by my clients.' },
+        { icon: 'check', title: 'Page 1', text: 'S.C Roofing for “roof repairs bath”, within a few weeks.' },
+        { icon: 'phone', title: '15+ job requests', text: 'For New Decorating in two weeks.' },
+        { icon: 'flame', title: '100 Lighthouse', text: 'In all four Google tests, TM Carpentry.' }
+      ] })
+    ]),
+
+    band('plan', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'The plan', title: 'Four steps,', accent: 'no contract.' }),
+      h(F.ProcessSteps, { key: 's', steps: [
+        { title: 'Free audit', text: 'Your current site and Google profile: what’s stopping you showing up, and what to fix first. Free.' },
+        { title: 'Google profile', text: 'Categories, photos of lit installs, showroom hours and a simple way to collect reviews.' },
+        { title: 'New website', text: '26 pages at launch, built from your design system. Quoted after the audit.' },
+        { title: 'Monthly local SEO', text: 'New pages, reviews, rankings and the four seasonal updates, reported in plain English. From £150 a month.' }
+      ] })
+    ]),
+
+    h('div', { id: 'next', style: { paddingBlock: 'clamp(56px, 8vw, 96px)', borderTop: '1px solid var(--line)' } },
+      h(F.CTABanner, {
+        eyebrow: 'Next step', title: 'Your free audit,', accent: 'this week.',
+        text: 'I’ll show you exactly where Fired Up stands for “log burner Bath” and your other key searches, and what I’d fix first. Rich · 07702 264 921 · seo-kings.co.uk',
+        primary: { label: 'Book the free audit', href: AUDIT },
+        secondary: { label: 'Call Rich', href: 'tel:+447702264921', icon: 'phone' },
+        image: PHOTO.loft.src, imageAlt: PHOTO.loft.alt
+      }))
+  );
+
+  ReactDOM.createRoot(document.getElementById('app')).render(page);
+})();
+</script>
+</body>
+</html>
