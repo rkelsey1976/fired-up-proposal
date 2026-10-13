@@ -262,6 +262,15 @@ footer.small { padding-block: var(--space-6) var(--space-7); border-top: 1px sol
       ] })
     ]),
 
+    band('later', [
+      h(F.SectionHeader, { key: 'h', eyebrow: 'Optional, later on', title: 'Room to grow,', accent: 'when you’re ready.',
+        lead: 'Neither is part of the £1,200 build. Both sit on the same site, so nothing gets rebuilt when you add them.' }),
+      h(F.SpecTable, { key: 't', caption: 'Add when it suits you', rows: [
+        { label: 'Buy online', value: 'Sell chosen products straight from the site, with secure payment and delivery or collection options. Priced when you’re ready.' },
+        { label: 'Social media', value: 'Regular Facebook and Instagram posts in your brand, following the same seasonal plan as the website. Priced when you’re ready.' }
+      ] })
+    ]),
+
     h('div', { id: 'next', style: { paddingBlock: 'clamp(56px, 8vw, 96px)', borderTop: '1px solid var(--line)' } },
       h(F.CTABanner, {
         eyebrow: 'Next step', title: 'Agree the plan, and I’ll', accent: 'start building.',
